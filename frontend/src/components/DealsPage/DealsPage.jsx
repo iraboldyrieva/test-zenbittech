@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import API_BASE_URL from "../../../config";
 import { fetchDeals } from "../../features/deals/dealsSlice";
 import "./DealsPage.css";
 
@@ -26,10 +27,7 @@ function DealsPage() {
         {deals.map((deal, index) => (
           <div key={index} className="deal-card">
             <div className="image-container">
-              <img
-                src={`http://localhost:5001/${deal.image}`}
-                alt={deal.title}
-              />
+              <img src={`${API_BASE_URL}/${deal.image}`} alt={deal.title} />
               <div className="deal-card-info">
                 <h3>{deal.title}</h3>
                 <div className="deal-card-content">
