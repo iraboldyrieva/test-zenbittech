@@ -1,0 +1,102 @@
+.login {
+  display: flex;
+  height: 100%;
+}
+
+.login .login-image {
+  background-image: url("../../assets/login-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  height: calc(100vh - 80px);
+  width: 100vw;
+}
+
+.login .login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 255px 100px;
+}
+
+.login-content h2 {
+  color: rgb(23, 34, 52);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.login-content input {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 5px;
+  padding: 12px 20px;
+  width: max(22vw, 250px);
+  margin-bottom: 20px;
+  background-color: #e0e0e0;
+}
+
+.login-content label {
+  color: rgb(23, 34, 52);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login-content p {
+  color: rgb(178, 159, 126);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.login-content button {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  width: max(22vw, 250px);
+  margin-top: 30px;
+  background-color: rgb(178, 159, 126);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login-content .login-content-text {
+  color: rgb(23, 34, 52);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-content .login-content-text span {
+  color: #b29f7e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login .login-image {
+    display: none;
+  }
+  .login .login-content {
+    margin: 0 auto;
+    padding: 100px 30px;
+  }
+
+  .login .login-content form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-content input {
+    margin-bottom: 0;
+  }
+}

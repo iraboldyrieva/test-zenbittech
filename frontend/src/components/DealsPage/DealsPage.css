@@ -1,0 +1,82 @@
+.deal-title {
+  color: rgb(178, 159, 126);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 80px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.deal-card {
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.deal-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+}
+
+.deal-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: max(0.5vw, 18px);
+  font-family: Lato;
+  font-weight: 700;
+}
+
+.deal-card-content h3,
+.deal-card-content p {
+  margin: 5px 0;
+}
+
+.deal-card-content h3 {
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 956px) {
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .deal-grid {
+    margin: 40px;
+    margin-top: 10px;
+  }
+  .deal-card-content {
+    font-size: max(0.5vw, 12px);
+  }
+  .deal-title {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+}

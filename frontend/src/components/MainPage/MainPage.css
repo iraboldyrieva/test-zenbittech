@@ -1,0 +1,43 @@
+.main {
+  background-image: url("../../assets/header-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  font-size: max(4.5vw, 22px);
+  font-weight: 700;
+}
+
+.main p {
+  font-size: max(1.5vw, 22px);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  max-width: 60vw;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main button {
+  margin-top: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 10px 24px;
+}
+
+@media (max-width: 768px) {
+  .main p {
+    font-size: max(1.5vw, 12px);
+  }
+  .main h1 {
+    font-size: max(4.5vw, 18px);
+    font-weight: 700;
+  }
+}
