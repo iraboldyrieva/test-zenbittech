@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDeals } from "../../features/deals/dealsSlice";
-import "./Dealspage.css";
+import "./DealsPage.css";
 
 function DealsPage() {
   const dispatch = useDispatch();
