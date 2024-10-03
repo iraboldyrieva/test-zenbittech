@@ -24,23 +24,26 @@ function DealsPage() {
     <div>
       <h2 className="deal-title">Open Deals</h2>
       <div className="deal-grid">
-        {deals.map((deal, index) => (
-          <div key={index} className="deal-card">
-            <div className="image-container">
-              <img src={`${API_BASE_URL}/${deal.image}`} alt={deal.title} />
-              <div className="deal-card-info">
-                <h3>{deal.title}</h3>
-                <div className="deal-card-content">
-                  <p>Price: {deal.price} Dhs</p>
-                  <p>Ticket: {deal.ticket} Dhs</p>
-                  <p>Yield: {deal.yield}%</p>
-                  <p>Days Left: {deal.days}</p>
-                  <p>Sold: {deal.sold}%</p>
+        {deals.map((deal, index) => {
+          console.log(deal);
+          return (
+            <div key={index} className="deal-card">
+              <div className="image-container">
+                <img src={`${API_BASE_URL}/${deal.image}`} alt={deal.title} />
+                <div className="deal-card-info">
+                  <h3>{deal.title}</h3>
+                  <div className="deal-card-content">
+                    <p>Price: {deal.price} Dhs</p>
+                    <p>Ticket: {deal.ticket} Dhs</p>
+                    <p>Yield: {deal.yield}%</p>
+                    <p>Days Left: {deal.days}</p>
+                    <p>Sold: {deal.sold}%</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
